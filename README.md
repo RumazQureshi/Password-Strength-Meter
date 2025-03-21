@@ -1,2 +1,8 @@
-# Password-Strength-Meter
-A Streamlit-based tool to check password strength and generate secure passwords. It analyzes length, uppercase/lowercase letters, digits, and special characters, providing real-time feedback. Features include a password generator, copy-to-clipboard, and an intuitive UI.
+<h2>🔐🔑Password Strength Meter</h2>
+i made password strength meter using python which will check the password strength and give the result accordingly.
+<br>
+it will also respond if you enter a common password
+<br>
+it can also generate strong password for user and then user can copy it easily
+<br>
+it will suggest the improvements needed to made in your password
