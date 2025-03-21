@@ -89,7 +89,7 @@ if st.button("Generate Password"):
 if "generated_password" in st.session_state:
     password = st.session_state["generated_password"]
     # st.text_input("Generated Password:", password, disabled=True)
-    st.code("Generated Password:", password, disabled=True)
+    st.code(password, language='text')
 
     # Copy Password Button
     # if st.button("📋 Copy Password"):
