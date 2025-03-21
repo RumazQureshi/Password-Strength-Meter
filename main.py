@@ -1,7 +1,7 @@
 import streamlit as st
 import random
 import string
-import pyperclip
+# import pyperclip
 # page setting
 st.set_page_config(page_icon="🔐",page_title="Password Strength Meter",layout="centered")
 st.title("🔐🔑Passwrod Strength Meter")
@@ -88,12 +88,13 @@ if st.button("Generate Password"):
 # Display password if generated
 if "generated_password" in st.session_state:
     password = st.session_state["generated_password"]
-    st.text_input("Generated Password:", password, disabled=True)
+    # st.text_input("Generated Password:", password, disabled=True)
+    st.code("Generated Password:", password, disabled=True)
 
     # Copy Password Button
-    if st.button("📋 Copy Password"):
-        pyperclip.copy(password)  # this will Copy password to clipboard
-        st.success("✅ Password copied to clipboard!")
+    # if st.button("📋 Copy Password"):
+    #     pyperclip.copy(password)  # this will Copy password to clipboard
+    #     st.success("✅ Password copied to clipboard!")
 
 # my footer using html to center
 st.markdown("---")
